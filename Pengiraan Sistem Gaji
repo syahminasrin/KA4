@@ -1,0 +1,53 @@
+
+import java.util.Scanner;
+public class gaji {
+    public static void main(String[] args)
+    {
+        
+       Scanner input=new Scanner(System.in);
+       double gaji=0;
+       System.out.println("Masukkan nama anda=");
+       String name =input.next();
+       
+      
+       System.out.println("Masukkan Bil jam sehari tidak melebihi 9 jam =");
+             int bjm =input.nextInt();
+                if(bjm>9)
+                 {
+                        System.out.println("Bil jam sehari tidak boleh melebihi 9 jam .Sila isi bilangan yang betul");
+         
+                  }    
+           
+       
+       System.out.println("masukkan bil hari tidak melebihi 30 hari =");
+           int biljam =input.nextInt();
+               if(biljam>30)
+                 {
+                      System.out.println("Bil hari tidak boleh melebihi 30 hari .Sila isi bilangan hari yang betul");
+                 }  
+
+               
+       System.out.println("masukkan bil jam tidak melebihi 50jam =");
+               int bilj =input.nextInt();
+                  if(bilj>50)
+                     {
+                       System.out.println("Bil jam tidak boleh melebihi 50 jam .Sila isi bilangan jam yang betul");
+                     }  
+                else
+                  {      
+                   gaji=(bjm*biljam*20)+(bilj*15);
+           
+                  }
+       
+          
+       System.out.println("Rumusan gaji bulanan ="+name);
+       System.out.println("Jumlah jam bekerja ="+bjm+"jam");
+       System.out.println("jumlah hari bekerja ="+biljam+"hari");
+       System.out.println("jumlah jamlebih masa ="+bilj+"jam");
+       System.out.println("JUMLAH GAJI = Rm"+gaji);
+       
+       
+       
+        
+    }
+}
